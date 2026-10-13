@@ -1,0 +1,14 @@
+body { font-family: system-ui, sans-serif; margin: 0; background: #111; color: #eee; }
+header { padding: 2rem; background: #1a1a1a; border-bottom: 1px solid #333; }
+.eyebrow { font-size: 0.8rem; color: #aaa; letter-spacing: 0.05em; }
+h1 { margin: 0.2rem 0; font-size: 2.4rem; }
+#status { margin-top: 1rem; color: #7dd3c0; }
+main { padding: 1.5rem; max-width: 900px; margin: 0 auto; }
+section { margin-bottom: 1.5rem; }
+#grooves, #recipes { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+button { background: #222; color: #eee; border: 1px solid #444; padding: 0.5rem 1rem; border-radius: 4px; cursor: pointer; }
+button.active { background: #0a6; border-color: #0a6; }
+.controls label { margin-right: 1rem; }
+.transport button { margin-right: 0.5rem; }
+#punch { background: #1a1a1a; padding: 1rem; white-space: pre-wrap; border-radius: 4px; }
+.note { font-size: 0.85rem; color: #888; }

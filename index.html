@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CompFour — Live piano chord-comp desk</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="eyebrow">Workin' With AI · The Forge Stack</div>
+    <h1>CompFour</h1>
+    <p>Four-bar live piano chord-comp desk. Live FluidR3 voicings so a looping hook finally has harmonic rhythm and finishes.</p>
+    <div id="status">Loading chairs…</div>
+  </header>
+  <main>
+    <section>
+      <h2>Groove</h2>
+      <div id="grooves"></div>
+    </section>
+    <section>
+      <h2>Recipe</h2>
+      <div id="recipes"></div>
+    </section>
+    <section class="controls">
+      <label>BPM <input id="bpm" type="number" min="60" max="180" value="92"></label>
+      <label>Key <select id="key">
+        <option>A minor</option>
+        <option>C major</option>
+        <option>E major</option>
+        <option>G major</option>
+        <option>D minor</option>
+      </select></label>
+      <label>Bars <input id="barsCount" type="number" min="4" max="16" value="8"></label>
+    </section>
+    <section class="transport">
+      <button id="playA">Play A (roots)</button>
+      <button id="playB">Play B (comp)</button>
+      <button id="stopBtn">Stop</button>
+      <button id="exportWav">Export WAV</button>
+      <button id="exportMid">Export MIDI</button>
+    </section>
+    <pre id="punch"></pre>
+    <p class="note">Tap to start audio. On iOS the silent switch mutes Web Audio. Audio never leaves the tab. Live FluidR3 only.</p>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
